@@ -80,3 +80,33 @@ SELECT * FROM opilane;
 INSERT INTO opitamine
 VALUES ('2026-04-16', 'andmebaasid', 1, 5)
 ```
+CREATE TABLE opetaja(
+opetajaID int PRIMARY KEY identity(1,1),
+nimi varchar(25),
+epost varchar(40),
+ruum varchar(15) )
+
+SELECT * FROM opetaja;
+
+-- LISAMINE nimi, epost ja ruum tabelisse "opetaja"
+INSERT INTO opetaja (nimi, epost, ruum)
+VALUES ('Lury Avik', 'luryavik@tthk.ee', 'A243'),
+('Markus Lehtla', 'markuslehtla@tthk.ee', 'A116'),
+('Irina Merkulova', 'irinamerkulova@tthk.ee', 'E03');
+
+--LISAME TABEL TUND
+CREATE TABLE tund(
+tundID int PRIMARY KEY IDENTITY(1,1),
+kuupaev DATE,
+tundinimi varchar(30),
+opetajaID int,
+FOREIGN KEY (opetajaID) REFERENCES opetaja(opetajaID),
+opetamineID int,
+FOREIGN KEY (opetamineID) REFERENCES opitamine(opetamineID) )
+
+SELECT * FROM tund;
+--LISAME kuupaev, tundinimi, opetajaID ja opetamineID tabelisse
+insert INTO tund(kuupaev, tundinimi, opetajaID, opetamineID)
+VALUES ('2023-04-15', 'Linux', 1, 1),
+('2023-04-16', 'Arvutivõrgud', 2, 2),
+('2023-04-17', 'Andmebaasid', 3, 3);
