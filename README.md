@@ -80,6 +80,7 @@ SELECT * FROM opilane;
 INSERT INTO opitamine
 VALUES ('2026-04-16', 'andmebaasid', 1, 5)
 ```
+```sql
 CREATE TABLE opetaja(
 opetajaID int PRIMARY KEY identity(1,1),
 nimi varchar(25),
@@ -110,3 +111,4 @@ insert INTO tund(kuupaev, tundinimi, opetajaID, opetamineID)
 VALUES ('2023-04-15', 'Linux', 1, 1),
 ('2023-04-16', 'Arvutivõrgud', 2, 2),
 ('2023-04-17', 'Andmebaasid', 3, 3);
+```
