@@ -112,3 +112,37 @@ VALUES ('2023-04-15', 'Linux', 1, 1),
 ('2023-04-16', 'Arvutivõrgud', 2, 2),
 ('2023-04-17', 'Andmebaasid', 3, 3);
 ```
+
+## ALTER TABLE
+- tabeli struktuuri muutmine (struktuur: veerudenimed, andmetüübid)
+1. uue veeru lisamine
+```sql
+--uue veeru lisamine
+ALTER TABLE opilane ADD isikukood varchar(11);
+
+--veeru kustutamine 
+ALTER TABLE opilane DROP COLUMN isikukood;
+
+--andmetüübi muutmine varchar -> char
+ALTER TABLE opilane ALTER COLUMN isikukood char(11);
+
+--sisseehitatud protseduur, mis näitab tabeli struktuur
+sp_help opilane;
+
+--kontrollimiseks
+SELECT * FROM ryhm;
+INSERT INTO ryhm (ryhmID, ryhmNIMI)
+VALUES (1, 'TITpv24');
+
+--lisamine FOREIGN KEY - võõrvõti-välisvõti
+ALTER TABLE opilane ADD ryhmID int ;
+ 
+ALTER TABLE opilane ADD CONSTRAINT fk_ryhm 
+FOREIGN KEY (ryhm) REFERENCES ryhm(ryhmID);
+
+--kontrollimiseks täidame table opilane
+INSERT INTO opilane
+VALUES('Leena', 'Jegorova', '2002-12-10',1,'+3723856145', 'Tartu', 4.5, '566777',33);
+INSERT INTO opilane
+VALUES('Aleskander', 'Makovski', '1991-12-2',1,'+372385614', 'Pärnu', 4.5, '566777',22);
+```
