@@ -98,4 +98,39 @@ EXEC kuvaTootedHinnaKategooriaga;
 <img width="322" height="225" alt="{B55943E1-9B5C-4E6E-A82D-3C78FB7C6FB9}" src="https://github.com/user-attachments/assets/a6744306-790a-4624-8097-09dac7382edf" />
 
 
+TABEL KLIENT JA PROTSEDUURID
+´´´sql
+CREATE TABLE klient (
+    id INT IDENTITY PRIMARY KEY,
+    nimi VARCHAR(100) NOT NULL,
+    linn VARCHAR(100),
+    vanus INT,
+    saldo INT
+);
+INSERT INTO klient (nimi, linn, vanus, saldo)
+VALUES
+    ('Mari Tamm', 'Tallinn', 28, 1250),
+    ('Jaan Kask', 'Tartu', 35, 980),
+    ('Liisa Saar', 'Pärnu', 22, 150);
 
+CREATE PROCEDURE kustuta_klient
+    @idklient_id INT
+AS
+BEGIN
+    DELETE FROM klient
+    WHERE id = @idklient_id;
+    SELECT * FROM klient;
+END;
+CREATE PROCEDURE uuenda_klient
+    @klient_id INT,
+    @uus_linn VARCHAR(100),
+    @uus_saldo INT
+AS
+BEGIN
+    UPDATE klient
+    SET linn = @uus_linn,
+        saldo = @uus_saldo
+    WHERE id = @klient_id;
+	SELECT * FROM klient;
+END;
+´´´
