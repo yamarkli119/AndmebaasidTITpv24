@@ -1,5 +1,7 @@
 Marko Suvorov TITPV24
 
+[Põhimõisted](README.md) | [Protseduurid](protseduur.md) | [ProtseduuridXAMPP](protseduuridXAMPP.md) | [Kasutajad](createkasutajad.md) | [Triggerid](triger.md) | [Keys (Kodutöö)](keys.md) | [Hotelliruumid](hotelliruum.md) | [Küsimused](kysimused.md)
+
 <img width="566" height="56" alt="{7F95A362-24B3-4A5A-A9CE-64BB3680A9E1}" src="https://github.com/user-attachments/assets/26a1f2cf-0878-4a93-bf6d-6044f8438eae" />
 <img width="718" height="755" alt="{31391293-547C-4536-BE8E-6E23592B50D1}" src="https://github.com/user-attachments/assets/e1f1714a-7394-44ce-8f32-a2eba2ac5873" />
 <img width="503" height="52" alt="{D751215D-8CDD-4B22-9C94-A6C72BF4845C}" src="https://github.com/user-attachments/assets/d2054fa2-0af3-4379-a510-89da614985d7" />
