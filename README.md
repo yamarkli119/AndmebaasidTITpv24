@@ -1,6 +1,6 @@
 # Andmebaaside Konspektid | Marko Suvorov
 
-[Põhimõisted](README.md) | [Protseduurid](protseduur.md) | [ProtseduuridXAMPP](protseduuridXAMPP.md) | [Kasutajad](createkasutajad.md) | [Triggerid](triger.md) | [Keys (Kodutöö)](keys.md)
+[Põhimõisted](README.md) | [Protseduurid](protseduur.md) | [ProtseduuridXAMPP](protseduuridXAMPP.md) | [Kasutajad](createkasutajad.md) | [Triggerid](triger.md) | [Keys (Kodutöö)](keys.md) | [Hotelliruumid](hotelliruum.md) | [Küsimused](kysimused.md)
 
 andmebaasidega seotud SQL kood ja konspektid
 ## Sisukord 
