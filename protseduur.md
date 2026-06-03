@@ -1,4 +1,7 @@
 ## Prosteduurid MySQL
+
+[Põhimõisted](README.md) | [Protseduurid](protseduur.md) | [ProtseduuridXAMPP](protseduuridXAMPP.md) | [Kasutajad](createkasutajad.md) | [Triggerid](triger.md) | [Keys (Kodutöö)](keys.md) | [Hotelliruumid](hotelliruum.md) | [Küsimused](kysimused.md)
+
 Tabeli loomine
 ```sql
 CREATE TABLE toode(
