@@ -1,5 +1,7 @@
 ## Andmebaas hotelliruumi reserveerimine
 
+[Põhimõisted](README.md) | [Protseduurid](protseduur.md) | [ProtseduuridXAMPP](protseduuridXAMPP.md) | [Kasutajad](createkasutajad.md) | [Triggerid](triger.md) | [Keys (Kodutöö)](keys.md) | [Hotelliruumid](hotelliruum.md) | [Küsimused](kysimused.md)
+
 ```sql
 --1. Guest
 CREATE TABLE guest(
