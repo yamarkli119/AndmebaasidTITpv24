@@ -75,12 +75,12 @@ END;
 EXEC muudatus 'add', 'toode', 'testVeerg', 'int';
 EXEC muudatus 'drop', 'toode', 'testVeerg';
 SELECT * FROM toode;
-```
+´´´
 <img width="397" height="99" alt="{E64D3C55-D0B4-4A89-B5C6-D1F444418AF1}" src="https://github.com/user-attachments/assets/8b998cf0-925c-4dae-bc1c-06ccd8286dc9" />
 <img width="337" height="99" alt="{866FBC73-993C-4114-8A01-85B2C7DFE6A3}" src="https://github.com/user-attachments/assets/e97439cf-c0c4-497d-bada-85766ea4d65e" />
 
 Neljas protseduur (HINNA KATEGOORIA)
-```sql
+´´´sql
 CREATE PROCEDURE kuvaTootedHinnaKategooriaga
 AS
 BEGIN
@@ -94,7 +94,7 @@ BEGIN
     FROM toode;
 END;
 EXEC kuvaTootedHinnaKategooriaga;
-```
+´´´
 <img width="322" height="225" alt="{B55943E1-9B5C-4E6E-A82D-3C78FB7C6FB9}" src="https://github.com/user-attachments/assets/a6744306-790a-4624-8097-09dac7382edf" />
 
 
