@@ -1,4 +1,7 @@
-# AndmebaasidTITpv24
+# Andmebaaside Konspektid | Marko Suvorov
+
+[Põhimõisted](README.md) | [Protseduurid](protseduur.md) | 
+
 andmebaasidega seotud SQL kood ja konspektid
 ## Sisukord 
 - [Põhimõisted](#põhimõisted)
